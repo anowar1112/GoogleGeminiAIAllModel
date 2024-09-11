@@ -1,0 +1,2 @@
+# GoogleGeminiAIAllModel
+All model practice
