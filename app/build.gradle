@@ -48,4 +48,12 @@ dependencies {
 
     // add the dependency for the Google AI client SDK for Android
     implementation("com.google.ai.client.generativeai:generativeai:0.7.0")
+
+    // ChatGPT setup
+    // Retrofit for HTTP requests
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    // Converter for parsing JSON with Moshi
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+    // OkHttp for network logging (optional)
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
 }

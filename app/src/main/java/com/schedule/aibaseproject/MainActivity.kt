@@ -8,7 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import com.schedule.aibaseproject.chatgpt.ChatGPTActivity
 import com.schedule.aibaseproject.databinding.ActivityMainBinding
+import com.schedule.aibaseproject.gemini.AIContentGenerativeActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,8 +26,15 @@ class MainActivity : AppCompatActivity() {
            // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show()
             goToAnotherActivity()
         }
+        binding.chatGptGenerationButtonNext.setOnClickListener {
+            goToChatGPTActivity()
+        }
     }
 
+    private fun goToChatGPTActivity() {
+        val intent = Intent(this, ChatGPTActivity::class.java)
+        startActivity(intent)
+    }
 
     private fun goToAnotherActivity() {
         val intent = Intent(this, AIContentGenerativeActivity::class.java)

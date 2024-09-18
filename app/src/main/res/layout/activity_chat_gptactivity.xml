@@ -8,26 +8,26 @@
         android:layout_height="match_parent"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"
-        tools:context=".gemini.AIContentGenerativeActivity">
+        tools:context=".chatgpt.ChatGPTActivity">
     <TextView
-            android:id="@+id/textView"
+            android:id="@+id/chatTextView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Search From Google"
+            android:text="Search From ChatGPT"
             android:textSize="25sp"
             android:textColor="@color/material_dynamic_primary60"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/input_text_view"/>
+            app:layout_constraintBottom_toTopOf="@+id/chat_gpt_input_text_view"/>
 
     <EditText
-            android:id="@+id/input_text_view"
+            android:id="@+id/chat_gpt_input_text_view"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
             android:focusable="true"
-            android:hint="Enter your Text"
+            android:hint="Enter your searching Text"
             android:imeOptions="actionNext"
             android:maxLength="100"
             android:singleLine="true"
@@ -35,25 +35,25 @@
             android:textColorHint="#996340"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintBottom_toTopOf="@+id/generation_button"
+            app:layout_constraintTop_toBottomOf="@+id/chatTextView"
+            app:layout_constraintBottom_toTopOf="@+id/chat_gpt_generation_button"
             app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-            android:id="@+id/generation_button"
+            android:id="@+id/chat_gpt_generation_button"
             android:layout_width="200dp"
             android:layout_height="70dp"
             android:textColor="#719900"
             android:text="Click Search Content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input_text_view"
-            app:layout_constraintBottom_toTopOf="@+id/scrollView"
+            app:layout_constraintTop_toBottomOf="@+id/chat_gpt_input_text_view"
+            app:layout_constraintBottom_toTopOf="@+id/chatScrollView"
             app:layout_constraintEnd_toEndOf="parent"/>
     <ScrollView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/scrollView"
+                android:id="@+id/chatScrollView"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/generation_button"
+                app:layout_constraintTop_toBottomOf="@+id/chat_gpt_generation_button"
                 app:layout_constraintEnd_toEndOf="parent">
         <TextView
                 android:id="@+id/resultTextView"
@@ -67,7 +67,5 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
 
     </ScrollView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

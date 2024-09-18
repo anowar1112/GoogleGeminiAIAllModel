@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_aicontent_generative.xml" value="0.1911231884057971" />
+        <entry key="app/src/main/res/layout/activity_chat_gptactivity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10104166666666667" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.10104166666666667" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.22" />

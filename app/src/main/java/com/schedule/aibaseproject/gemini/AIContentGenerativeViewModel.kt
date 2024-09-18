@@ -1,4 +1,4 @@
-package com.schedule.aibaseproject.viewModel
+package com.schedule.aibaseproject.gemini
 
 import android.util.Log
 import androidx.lifecycle.LiveData

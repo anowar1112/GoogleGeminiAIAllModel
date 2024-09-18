@@ -14,7 +14,10 @@
             android:theme="@style/Theme.AIBaseProject"
             tools:targetApi="31">
         <activity
-                android:name=".AIContentGenerativeActivity"
+                android:name=".chatgpt.ChatGPTActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".gemini.AIContentGenerativeActivity"
                 android:exported="false"/>
         <activity
                 android:name=".MainActivity"

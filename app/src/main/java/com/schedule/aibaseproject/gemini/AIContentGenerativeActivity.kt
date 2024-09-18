@@ -1,4 +1,4 @@
-package com.schedule.aibaseproject
+package com.schedule.aibaseproject.gemini
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,9 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.viewModels
+import com.schedule.aibaseproject.R
 import com.schedule.aibaseproject.databinding.ActivityAicontentGenerativeBinding
-import com.schedule.aibaseproject.databinding.ActivityMainBinding
-import com.schedule.aibaseproject.viewModel.AIContentGenerativeViewModel
 
 class AIContentGenerativeActivity : AppCompatActivity() {
 

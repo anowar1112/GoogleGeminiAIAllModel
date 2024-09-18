@@ -23,17 +23,17 @@
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:textColor="#719900"
-            android:text="Content Generation"
+            android:text="Go to Gemini"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-            android:id="@+id/generation_button_next"
+            android:id="@+id/chat_gpt_generation_button_next"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:textColor="#719900"
-            android:text="Coming Soon"
+            android:text="Go to Chat GPT"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/content_generation_button"
             app:layout_constraintEnd_toEndOf="parent"/>

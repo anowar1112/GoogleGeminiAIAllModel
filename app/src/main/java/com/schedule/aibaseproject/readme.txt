@@ -1,3 +1,4 @@
+/////// Gemini
 1) API key generate link : login our Google account
 // https://aistudio.google.com/app/apikey
 
@@ -18,3 +19,11 @@ git remote add origin https://github.com/yourusername/your-repo-name.git
 Upload of project from scratch require git pull origin master.
 git pull origin master
 git push origin master
+
+
+
+/////// ChatGPT
+How can I Get Authorization Key ?
+Chat GPTlogin :
+https://platform.openai.com/api-keys
+path: "API keys" -> "View user api keys" -> "+ create new secret keys"
