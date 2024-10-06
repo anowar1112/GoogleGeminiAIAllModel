@@ -2,6 +2,7 @@ package com.schedule.aibaseproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import androidx.navigation.ui.navigateUp
 import com.schedule.aibaseproject.chatgpt.ChatGPTActivity
 import com.schedule.aibaseproject.databinding.ActivityMainBinding
 import com.schedule.aibaseproject.gemini.AIContentGenerativeActivity
+import com.schedule.aibaseproject.highLevelMethod.HighLevelFunction
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         binding.contentGenerationButton.setOnClickListener { view ->
            // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show()
             goToAnotherActivity()
+           // highLevelFunctionPractice()
         }
         binding.chatGptGenerationButtonNext.setOnClickListener {
             goToChatGPTActivity()
@@ -39,6 +42,21 @@ class MainActivity : AppCompatActivity() {
     private fun goToAnotherActivity() {
         val intent = Intent(this, AIContentGenerativeActivity::class.java)
         startActivity(intent)
+    }
+
+
+    private fun highLevelFunctionPractice(){
+        val result = HighLevelFunction.getInstance()?.sendToFunction(add(2,3),::add)
+        val resultq = HighLevelFunction.getInstance()?.sendToHighFunction(addForHigh(2,3,::add),::addForHigh)
+        Log.d("mainactivity", "$result $resultq")
+    }
+
+    private fun add(a:Int,b:Int): Int{
+        return a + b
+    }
+
+    private fun addForHigh(a:Int,b:Int,funType:(Int,Int)->Int): Int{
+        return funType(a,b)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
